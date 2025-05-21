@@ -1,7 +1,7 @@
 import Footer from "./components/footer/footer"
 import Header from "./components/header/Header"
 
-export default function App() {
+export default function Layout() {
   return (
     <>
       <Header 
