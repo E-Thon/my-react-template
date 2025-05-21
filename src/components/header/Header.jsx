@@ -1,5 +1,4 @@
 import Navigation from "../navigation/Navigation"
-import "./Header.scss"
 
 export default function Header({header}) {
 

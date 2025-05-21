@@ -1,5 +1,4 @@
 import Layout from "../../Layout"
-import "./Loading.scss"
 
 export default function Loading() {
 

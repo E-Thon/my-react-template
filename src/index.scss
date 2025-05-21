@@ -1,3 +1,11 @@
+@use "./components/buttons/ButtonLink";
+@use "./components/error/ErrorBoundary";
+@use "./components/footer/Footer";
+@use "./components/header/Header";
+@use "./components/loading/Loading";
+@use "./components/navigation/Navigation";
+@use "./variables/colors";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
