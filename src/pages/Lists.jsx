@@ -8,7 +8,7 @@ export default function Lists() {
         <ul>
             {lists.map(list => (
                 <li key={list.id}>
-                    <Link to={`/lists/ ${list.id}`}>{list.name}</Link>
+                    <Link to={`/lists/${list.id}`}>{list.name}</Link>
                 </li>
             ))}
         </ul>

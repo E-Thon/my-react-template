@@ -1,3 +1,4 @@
+import { Outlet } from "react-router"
 import Footer from "./components/footer/footer"
 import Header from "./components/header/Header"
 
@@ -8,8 +9,9 @@ export default function Layout() {
         header="My App"
       />
 
-      <Main 
-      />
+      <main> 
+      <Outlet />
+      </main>
 
       <Footer 
       copyright="2025 My App"

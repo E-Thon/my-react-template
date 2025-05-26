@@ -7,11 +7,12 @@ import NotFound from "./pages/NotFound";
 import { getList, getLists } from "./utilities/typicode";
 import Loading from "./components/loading/Loading";
 import { ErrorBoundary } from "./components/error/ErrorBoundary";
+import Layout from "./Layout";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <div>Home</div>,
+        element: <Layout />,
         hydrateFallbackElement: <Loading />,
         errorElement: <ErrorBoundary />,
         children: [
