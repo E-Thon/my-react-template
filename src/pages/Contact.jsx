@@ -12,7 +12,7 @@ const contactSchema = z.object({
 export default function Contact() {
     const [errors, setErrors] = useState({})
     const navigate = useNavigate();
-    
+
     function handleSubmit(event) {
         event.preventDefault();
         const formData = new FormData(event.target); //alle data tages ud af formularen
@@ -37,7 +37,7 @@ export default function Contact() {
                 body: JSON.stringify(result.data)
             })
                 .then(res => {
-                    if (res.ok) navigate("/")// evt til takkeside eller kvitteringsside (nu index)
+                    if (res.ok) navigate("/")// evt til takkeside/ kvitteringsside (nu index)
                 })
         }
 

@@ -21,7 +21,7 @@ export function ErrorBoundary() {
       <div>
         <h1>Error</h1>
         <p>{error.message}</p>
-        <p>The people relevant of this error has been noticed</p>
+        <p>The people relevant of this error has been notified</p>
         <Link to="/">Homepage</Link>
       </div>
     );
