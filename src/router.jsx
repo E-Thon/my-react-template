@@ -8,6 +8,7 @@ import { getList, getLists } from "./utilities/typicode";
 import Loading from "./components/loading/Loading";
 import { ErrorBoundary } from "./components/error/ErrorBoundary";
 import Layout from "./Layout";
+import { handleSubmit } from "./utilities/actions";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "contact",
-                element: <Contact />
+                element: <Contact />,
+                action: handleSubmit,
             },
             {
                 path: "*",
