@@ -9,7 +9,7 @@ export function useAuth(){
 
 export default function AuthProvider({ children }) {
 
-    cont [token, setToken] = useState(sessionStorage.getItem("token"));
+    const [token, setToken] = useState(sessionStorage.getItem("token"));
 
     function login (newToken){
         setToken(newToken)

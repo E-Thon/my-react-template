@@ -9,6 +9,7 @@ import Loading from "./components/loading/Loading";
 import { ErrorBoundary } from "./components/error/ErrorBoundary";
 import Layout from "./Layout";
 import { handleSubmit } from "./utilities/actions";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
                 path: "contact",
                 element: <Contact />,
                 action: handleSubmit,
+            },
+            {
+                path: "login",
+                element: <Login />
             },
             {
                 path: "*",
