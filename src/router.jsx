@@ -10,6 +10,7 @@ import { ErrorBoundary } from "./components/error/ErrorBoundary";
 import Layout from "./Layout";
 import { handleSubmit } from "./utilities/actions";
 import Login from "./pages/Login";
+import RequireAuth from "./components/requireauth/RequireAuth";
 
 const router = createBrowserRouter([
     {
@@ -24,12 +25,20 @@ const router = createBrowserRouter([
             },
             {
                 path: "lists",
-                element: <Lists />,
+                element: (
+                    <RequireAuth >
+                        <Lists />
+                    </ RequireAuth>
+                ),
                 loader: getLists,
             },
             {
                 path: "lists/:id",
-                element: <ListDetail />,
+                element: (
+                    <RequireAuth >
+                        <ListDetail />
+                    </RequireAuth>
+                ),
                 loader: getList,
             },
             {

@@ -1,3 +1,4 @@
+import { redirect } from "react-router"
 import queryClient from "./queryClient"
 
 // ! Uden tanstack:
@@ -11,6 +12,10 @@ import queryClient from "./queryClient"
 
 // //! Med tanstack:
 export async function getLists() {
+
+    const token = sessionStorage.getItem("token")
+    if(!token) redirect("/login")
+
     return queryClient.fetchQuery({
         queryKey: ['users'],
         queryFn: async function () {

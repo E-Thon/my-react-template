@@ -4,8 +4,6 @@ import { useAuth } from "../contexts/AuthContext";
 export default function Lists() {
     const lists = useLoaderData();
     const { token } = useAuth()
-    console.log(token);
-    
 
     return (
         <ul>
