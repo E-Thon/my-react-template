@@ -3,7 +3,7 @@ import { useAuth } from "../../contexts/AuthContext"
 
 
 export default function LogoutBtn() {
-    const { logout }= useAuth()
+    const { logout, token }= useAuth()
     const navigate = useNavigate()
 
     function handleLogout(){

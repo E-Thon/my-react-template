@@ -11,8 +11,8 @@ export default function Header({ header }) {
             {/* Conditional rendering */}
             {location.pathname !== "/login" && (
                 <>
-                    <LogoutBtn />
                     <Navigation />
+                    <LogoutBtn />
                 </>
             )}
         </>
