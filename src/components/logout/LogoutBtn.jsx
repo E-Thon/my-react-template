@@ -3,15 +3,17 @@ import { useAuth } from "../../contexts/AuthContext"
 
 
 export default function LogoutBtn() {
-    const { logout, token }= useAuth()
+    const { logout, token } = useAuth()
     const navigate = useNavigate()
 
-    function handleLogout(){
+    function handleLogout() {
         logout()
-        navigate("/")
+        setTimeout(() => {
+            navigate("/")
+        }, 0)
     }
 
-    return token?(
+    return token ? (
         <button onclick={handleLogout}>Log out</button>
     ) : <Link to="/login">Login</Link>
 }
