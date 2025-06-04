@@ -4,7 +4,7 @@
 @use "./components/header/Header";
 @use "./components/loading/Loading";
 @use "./components/navigation/Navigation";
-@use "./variables/colors";
+@use "./style/variables/Colors";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
