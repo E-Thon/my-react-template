@@ -14,6 +14,6 @@ export default function LogoutBtn() {
     }
 
     return token ? (
-        <button onclick={handleLogout}>Log out</button>
+        <button onClick={handleLogout}>Log out</button>
     ) : <Link to="/login">Login</Link>
 }
